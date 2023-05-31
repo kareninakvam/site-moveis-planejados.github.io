@@ -7,7 +7,7 @@ body {
   header {
     background-image: url('background.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     color: #000;
     text-align: center;
     height: 100vh;
@@ -18,7 +18,8 @@ body {
   }
   
   header h1 {
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /* Adiciona um contorno branco fino */
+    margin-top: 50px; /* Ajusta a margem superior para descer a mensagem de boas-vindas */
+    color: #FFF; /* Define a cor do texto como branco */
   }
   
   nav {
@@ -37,6 +38,17 @@ body {
     border-radius: 50%;
   }
   
+  .header-content {
+    color: #FFF; /* Define a cor do telefone como branco */
+    font-family: 'Poiret One', cursive; /* Altera a fonte para Poiret One */
+    margin-left: 25px; /* Adiciona uma margem esquerda */
+    margin-right: 25px; /* Adiciona uma margem direita */
+  }
+
+  .header-content p{
+    font-weight: bold;
+  }
+  
   .menu {
     list-style: none;
     display: flex;
@@ -50,8 +62,10 @@ body {
   
   .menu a {
     text-decoration: none;
-    color: #000;
+    color:#000;
     font-weight: bold;
+    font-size: 18px;
+    font-family: 'Poiret One', cursive;
   }
   
   .menu-icon {
@@ -89,13 +103,4 @@ body {
       border-bottom: 1px solid #000;
     }
   }
-
-  @media screen and (max-width: 480px) {
-    body {
-        background-position: center center;
-    }
-
-    header {
-        background-image: url('background-mobile.jpg');
-    }
-}
+  
