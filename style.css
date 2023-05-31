@@ -89,4 +89,9 @@ body {
       border-bottom: 1px solid #000;
     }
   }
-  
+  @media screen and (max-width: 480px) {
+    body {
+        background-position: center center;
+      }
+    
+  }
